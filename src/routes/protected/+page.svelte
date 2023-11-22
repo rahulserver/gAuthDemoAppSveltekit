@@ -1,10 +1,7 @@
-// svelte template code
 <script>
   import { onMount } from 'svelte';
   import {page} from "$app/stores";
   import {goto} from "$app/navigation";
-
-  const store = useStore();
 
   onMount(() => {
     if(!$page.data?.session) {
